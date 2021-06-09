@@ -1,0 +1,182 @@
+
+<html>
+<head>
+<title>Briana Cash | Photography</title>
+	<link rel="shortcut icon" href="https://brianacash.com/wp-content/themes/live/images/favicons/favicon.ico">
+<link rel="stylesheet" href="https://www.jackbotein.com/webdevelopment/fullpage.css">
+<script src="https://www.jackbotein.com/webdevelopment/fullpage.js"></script>
+</head>
+<body onload="samplecontactform()">
+<div class="header">
+<div class="logo">
+<b>BRIANA CASH</b> | PHOTOGRAPHY
+</div>
+<div class="nav">
+<span><a href="#1">About</a></span>
+<span><a href="#2">Portfolio</a></span>
+<span><a href="#3">Contact</a></span>
+</div>
+</div>
+
+<div id="fullpage">
+
+    <div class="section" style="background-image: URL('https://www.invaluable.com/blog/wp-content/uploads/2019/06/hero-5.jpg');background-repeat:no-repeat;width:100%;height:100%;background-size:cover;">
+    <div class="aboutmebackgroundimage">
+    </div>
+    <div class="aboutmetext">
+    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+    </div>
+    </div>
+    <div class="section">
+    <div class="heading">
+   <b>Porfolio</b>
+    </div>
+        <div class="slide" data-anchor="slide1"><img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwb2JqZWN0c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" style="margin-top:110px;height:350px;"></div>
+        <div class="slide" data-anchor="slide2"><img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwb2JqZWN0c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" style="margin-top:110px;height:350px;"></div>
+        <div class="slide" data-anchor="slide3"><img src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwb2JqZWN0c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" style="margin-top:110px;height:350px;"></div>
+    </div>
+    <div class="section">
+     <div class="heading" style="color:black;margin-top:-39px">
+   <b>Contact</b>
+    </div>
+    <div class="spacer" style="height:159px"></div>
+      <div id="feedbackform"></div>
+    </div>
+</div>
+      <div class="footer">
+      © 2021 BRIANA CASH ®. All Rights Reserved. | Website by Jack Botein
+      </div>
+      
+<style>
+  .section {
+  font-family: 'Montserrat', sans-serif;
+  text-align:center;
+  font-size: 3em;
+}
+</style>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+.header {
+  position:fixed;
+  z-index:999;
+  text-align:center;
+  top:0;
+  left:0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  font-family: Helvetica, Arial, sans-serif;
+font-size:20px;
+}
+
+.logo {
+    margin-top:8px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing:.3em;
+    color:#005196;
+}
+
+.nav {
+  margin-top:20px;
+  margin-bottom:5px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size:15px;
+}
+
+span {
+  margin-left: 15px;
+  margin-right: 15px;
+  transition-duration:1.5s;
+}
+
+span:hover {
+  color:silver;
+}
+
+.aboutmetext {
+  font-size: 20px;
+  padding:2%;
+  width:90%;
+  margin-left:3%;
+  text-align:left;
+  background-color:rgba(255, 255, 255, .8);
+  border-radius:20px;
+  font-family: helvetica, Arial, sans-serif;
+}
+
+.heading {
+  color:white;
+  position:absolute;
+  width:100%;
+  top:165px;
+  text-align:center;
+  font-size: 30px;
+  text-align:center;
+  font-family: helvetica, Arial, sans-serif;
+}
+
+.footer {
+  width:100%;
+  position:fixed;
+  z-index:999;
+  bottom:0px;
+  font-size:10px;
+  padding:10px;
+  color:black;
+  background-color:rgba(255, 255, 255, .8);
+  text-align:center;
+  font-family: helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration:none;
+  color:black;
+  transition-duration:1s;
+}
+
+a:hover {
+  color:silver;
+}
+
+::selection {
+  color:white;
+  background-color:#005196;
+}
+</style>
+
+<script>
+  new fullpage('#fullpage', {
+  licenseKey: 'YOUR KEY HERE',
+  sectionsColor: ['white', 'black', 'white', '#ADD8E6'],
+});
+</script>
+
+ <script>
+  function samplecontactform() {
+  document.getElementById('feedbackform').innerHTML = "<iframe id='gform' src='https://www.jackbotein.com/samplecontactform' style='border:0px #ffffff none;' name='myiFrame' autocomplete='off' scrolling='no' frameborder='1' marginheight='0px' marginwidth='0px' height='690px' width='100%' allowfullscreen></iframe>";
+loadtracker();
+}
+    </script>
+  <script type="text/javascript">
+var load = 0;
+
+function loadtracker() {
+document.getElementById('gform').onload = function() {
+    /*Execute on every reload on iFrame*/
+    load++;
+    if(load > 1){
+        /*Second reload is a submit*/
+        window.location.href = "https://jackbotein.github.io/brianacashphotography/";
+    }
+}
+}
+</script>
+</body>
+</html>
