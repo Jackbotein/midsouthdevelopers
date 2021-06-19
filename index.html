@@ -11,11 +11,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="https://jackbotein.github.io/midsouthdevelopers/assets/css/main.css" />
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" onload="contactform()">
+
 
 		<!-- Header -->
 			<div id="header">
-        <img src="https://jackbotein.github.io/midsouthdevelopers/images/Midsouthdeveloperslogo.png" style="width:60vw">
+        <img src="https://jackbotein.github.io/midsouthdevelopers/images/Midsouthdeveloperslogo.png" style="max-width:60vw;width:800px">
         <div class="spacer" style="height:25px;"></div>
 				<p style="margin-left:45px;margin-right:45px;">Mid South Developers of La. is a trusted name for commercial and residential construction needs. Based in Metairie, La., we offer new construction and home remodeling services for New Orleans and the Louisiana area. Our 15 years of highly reputable successful roofing, home remodeling and new construction in Louisiana has earned us an A+ rating with the Better Business Bureau. We are dedicated to meeting all of your building needs in an efficient and professional manner.</p>
 			</div>
@@ -217,30 +218,12 @@
 				<div class="container medium">
 
 					<header class="major last">
-						<h2>Questions or comments?</h2>
+						<h2>Contact Mid South Developers</h2>
 					</header>
 
-					<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor
-					orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
+					<p>Your feedback really matters to us.</p>
 
-					<form method="post" action="#">
-						<div class="row">
-							<div class="col-6 col-12-mobilep">
-								<input type="text" name="name" placeholder="Name" />
-							</div>
-							<div class="col-6 col-12-mobilep">
-								<input type="email" name="email" placeholder="Email" />
-							</div>
-							<div class="col-12">
-								<textarea name="message" placeholder="Message" rows="6"></textarea>
-							</div>
-							<div class="col-12">
-								<ul class="actions special">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
+	      <div id="feedbackform" style="background-color: transparent;"></div>
 
 					<ul class="icons">
 						<li><a href="https://jackbotein.github.io/midsouthdevelopers/#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -263,7 +246,26 @@
 			<script src="https://jackbotein.github.io/midsouthdevelopers/assets/js/breakpoints.min.js"></script>
 			<script src="https://jackbotein.github.io/midsouthdevelopers/assets/js/util.js"></script>
 			<script src="https://jackbotein.github.io/midsouthdevelopers/assets/js/main.js"></script>
+ <script>
+  function contactform() {
+  document.getElementById('feedbackform').innerHTML = "<iframe id='gform' src='https://jackbotein.github.io/midsouthdevelopers/contactform.html' style='border:0px #ffffff none;' name='myiFrame' autocomplete='off' scrolling='no' frameborder='1' marginheight='0px' marginwidth='0px' height='900px' width='100%' allowfullscreen></iframe>";
+loadtracker();
+}
+    </script>
+  <script type="text/javascript">
+var load = 0;
 
+function loadtracker() {
+document.getElementById('gform').onload = function() {
+    /*Execute on every reload on iFrame*/
+    load++;
+    if(load > 1){
+        /*Second reload is a submit*/
+        window.location.href = "https://jackbotein.github.io/brianacashphotography/";
+    }
+}
+}
+</script>
 	</body>
 </html>
 
